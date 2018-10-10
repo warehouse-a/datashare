@@ -1,0 +1,42 @@
+﻿spring:
+  profiles:
+    active:
+    - dev
+---
+server:
+  port: 8001
+
+feign:
+  hystrix:
+    enabled: true
+
+spring:
+  profiles: dev
+  application:
+    name: datauser
+  datasource:
+    username: temp
+    password: temp
+    url: jdbc:mysql://39.106.207.72:3306/datauser
+    dbcp2:
+      max-idle: 5
+      min-idle: 5
+      max-wait-millis: 200
+      initial-size: 5
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+
+
+mybatis:
+  config-location: classpath:mybatis/mybatis.cfx.xml
+  type-aliases-package: cn.com.datashare.datauser.bean
+  mapper-locations:
+  - classpath:mybatis/mapper/**/*.xml
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka/
+  instance:
+    instance-id: datauser
+    prefer-ip-address: true
