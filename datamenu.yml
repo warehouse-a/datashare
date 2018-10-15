@@ -29,7 +29,7 @@ spring:
 
 mybatis:
   config-location: classpath:mybatis/mybatis.cfx.xml
-  type-aliases-package: cn.com.datashare.datamenu.bean
+  type-aliases-package: cn.com.datashare.datauser.bean
   mapper-locations:
   - classpath:mybatis/mapper/**/*.xml
 
