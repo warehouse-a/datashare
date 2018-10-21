@@ -6,6 +6,10 @@
 server:
   port: 8001
 
+feign:
+  hystrix:
+    enabled: true
+
 spring:
   profiles: dev
   application:
