@@ -32,11 +32,3 @@ mybatis:
   type-aliases-package: cn.com.datashare.datauser.bean
   mapper-locations:
   - classpath:mybatis/mapper/**/*.xml
-
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:7001/eureka/
-  instance:
-    instance-id: datauser
-    prefer-ip-address: true
