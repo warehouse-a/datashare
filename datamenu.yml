@@ -17,7 +17,7 @@ spring:
   datasource:
     username: temp
     password: temp
-    url: jdbc:mysql://39.106.207.72:3306/datamenu
+    url: jdbc:mysql://39.106.207.72:3306/datamenu?useUnicode=true&amp;characterEncoding=utf8&amp;characterSetResults=utf8&amp;useSSL=false
     dbcp2:
       max-idle: 5
       min-idle: 5
