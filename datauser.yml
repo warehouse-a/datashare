@@ -25,6 +25,16 @@ spring:
       initial-size: 5
     driver-class-name: com.mysql.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
+  redis:
+    timeout: 0
+    commandTimeout: 5000
+    cluster:
+      nodes: 39.106.307.72:8361,39.106.307.72:8362,39.106.307.72:8363,39.106.307.72:8364,39.106.307.72:8365,39.106.307.72:8366
+    pool:
+      max-active: 8
+      max-wait: -1
+      max-idle: 8
+      min-idle: 0  
 
 
 mybatis:
