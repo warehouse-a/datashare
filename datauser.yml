@@ -31,10 +31,10 @@ spring:
     cluster:
       nodes: 39.106.207.72:8361,39.106.207.72:8362,39.106.207.72:8363,39.106.207.72:8364,39.106.207.72:8365,39.106.207.72:8366
     pool:
-      max-active: 8
+      max-active: 100
       max-wait: -1
-      max-idle: 8
-      min-idle: 0  
+      max-idle: 100
+      min-idle: 50
 
 
 mybatis:
