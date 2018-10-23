@@ -26,6 +26,8 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
   redis:
+    timeout: 10000
+    commandTimeout: 5000
     database: 0
     cluster:
       nodes: 39.106.207.72:8361,39.106.207.72:8362,39.106.207.72:8363,39.106.207.72:8364,39.106.207.72:8365,39.106.207.72:8366
