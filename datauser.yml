@@ -26,12 +26,16 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
   redis:
-    host: 39.106.207.72
-    port: 9361
     timeout: 60000
     database: 0
     cluster:
-      nodes: 39.106.207.72:9362,39.106.207.72:9363,39.106.207.72:9364,39.106.207.72:9365,39.106.207.72:9366
+      nodes:
+        - 39.106.207.72:9361
+        - 39.106.207.72:9362
+        - 39.106.207.72:9363
+        - 39.106.207.72:9364
+        - 39.106.207.72:9365
+        - 39.106.207.72:9366
     pool:
       max-active: 300
       max-wait: -1
