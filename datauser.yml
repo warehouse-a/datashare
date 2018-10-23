@@ -28,7 +28,8 @@ spring:
   redis:
     timeout: 60000
     database: 0
-    host: 39.106.207.72:9361
+    host: 39.106.207.72
+    port: 9361
     pool:
       max-active: 300
       max-wait: -1
