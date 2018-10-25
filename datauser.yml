@@ -26,7 +26,7 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
   mail:
-    username: 305851718@qq.com
+    username: datashare
     password: cdfnmicrdqfdbhie
     host: smtp.qq.com
     properties:
