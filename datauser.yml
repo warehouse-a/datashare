@@ -25,6 +25,15 @@ spring:
       initial-size: 5
     driver-class-name: com.mysql.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
+  mail:
+    username: datashare
+    password: wugkzqekgvgvbgid
+    host: smtp.qq.com
+    properties:
+      mail:
+        smtp:
+          ssl:
+            enable: true
   redis:
     timeout: 60000
     database: 0
