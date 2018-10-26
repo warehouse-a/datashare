@@ -32,8 +32,10 @@ spring:
     properties:
       mail:
         smtp:
-          ssl:
+          auth: true
+          starttls:
             enable: true
+            required: true
   redis:
     timeout: 60000
     database: 0
