@@ -1,0 +1,18 @@
+﻿spring:
+  profiles:
+    active:
+    - dev
+---
+server:
+  port: 9527
+spring:
+  application:
+    name: datazuul
+
+zuul:
+  ignored-services: "*"
+  routes:
+    mydept.serviceId: datauser
+    mydept.path: /user/**
+info:
+  name: zuul
