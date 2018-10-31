@@ -9,9 +9,9 @@ spring:
   application:
     name: datazuul
 
-ribbon:
-  ReadTimeout: 60000
-  ConnectTimeout: 60000
+feign:
+  hystrix:
+    enabled: true
 
 zuul:
   ignored-services: "*"
